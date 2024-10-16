@@ -1,0 +1,13 @@
+[
+    {
+        "name": "start",
+        "final_image": "blank_screen.png",
+        "description": "start"
+    },
+    {
+        "name": "NONE",
+        "_comment": "Second action added, because Annotator is programmed to ignore the last action with blank image",
+        "description": "unrecognized action",
+        "final_image": "blank_screen.png"
+    }
+]

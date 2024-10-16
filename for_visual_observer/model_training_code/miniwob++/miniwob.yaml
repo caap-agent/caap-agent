@@ -1,0 +1,6 @@
+path: ../../datasets/miniwob_dataset
+train: images/train2024
+val: images/valid2024
+
+nc: 15
+names: ['text', 'hyperlink', 'tabled_text', 'button', 'radio', 'checkbox', 'dropdown', 'input_field', 'text_area', 'resize_handle', 'scrollbar_v', 'icon', 'shape', 'draggable_text', 'breakdown_sub_element_type_that_should_not_be_handled_by_annotator']

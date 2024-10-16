@@ -1,0 +1,10 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Custom data
+/miniwob++/data/_temp/
+/miniwob++/data/llm_agent_record/
+/webshop/data/_temp/
+/webshop/data/llm_agent_record/

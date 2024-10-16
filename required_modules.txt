@@ -1,0 +1,14 @@
+gymnasium
+miniwob
+numpy
+openai
+pandas
+pillow
+PyAutoGUI
+pytz
+pywin32
+regex
+scikit-learn
+selenium
+transformers
+ultralytics

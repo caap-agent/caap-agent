@@ -1,0 +1,160 @@
+[
+  {
+    "name": "click_element",
+    "description": "This action moves the mouse pointer to a screen element and performs a left-click to activate that element.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "element_id": {
+          "type": "integer",
+          "description": "The id number (ranged from 1 to N) of the screen element to act on. A list of elements will be provided with the corresponding id numbers."
+        }
+      },
+      "required": ["element_id"]
+    }
+  },
+  
+  {
+    "name": "click_new_point",
+    "description": "This action moves the mouse pointer to a screen location and performs a left-click on the location.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer",
+          "description": "The x coordinate of the click location."
+        },
+        "y": {
+          "type": "integer",
+          "description": "The y coordinate of the click location."
+        }
+      },
+      "required": ["x", "y"]
+    }
+  },
+
+  {
+    "name": "control_click_element",
+    "description": "This action click on a screen element while holding down the 'control' modifier key. It is used to select multiple elements.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "element_id": {
+          "type": "integer",
+          "description": "The id number (ranged from 1 to N) of the screen element to act on. A list of elements will be provided with the corresponding id numbers."
+        }
+      },
+      "required": ["element_id"]
+    }
+  },
+
+  {
+    "name": "type_text",
+    "description": "This action makes keyboard typing actions to enter the text into a specific screen element, Clicking on the element is essential to give it focus, without which typing the text is impossible.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "string_to_type": {
+          "type": "string",
+          "description": "The text to type"
+        }
+      },
+      "required": ["string_to_type"]
+    }
+  },
+
+  {
+    "name": "point_element",
+    "description": "This action moves the mouse pointer to on top of an UI element without clicking it. This sometimes activates the element and reveals hidden menus or scrollbar.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "element_id": {
+          "type": "integer",
+          "description": "The id number (ranged from 1 to N) of the screen element to point at. A list of elements will be provided with the corresponding id numbers."
+        }
+      },
+      "required": ["element_id"]
+    }
+  },
+
+  {
+    "name": "press_control_A",
+    "description": "This is 'Select All'. All text in the activated text field is highlighted.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+
+  {
+    "name": "press_control_C",
+    "description": "This is 'Copy'. Highlighted text is copied to the clipboard.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+
+  {
+    "name": "press_control_V",
+    "description": "This is 'Paste'. Text stored in the clipboard is pasted into the selected area.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+
+
+  {
+    "name": "drag_mouse_hold_down",
+    "description": "This action initiates the drag action sequence by clicking and holding down the left mouse button. It is used to move objects on the screen or to highlight a block of text. This action marks the starting point of the dragging move.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer",
+          "description": "The x coordinate of the mouse down location."
+        },
+        "y": {
+          "type": "integer",
+          "description": "The y coordinate of the mouse down location."
+        }
+      },
+      "required": ["x", "y"]
+    }
+  },
+
+  {
+    "name": "drag_mouse_move",
+    "description": "This action is the middle of the drag action sequence. It moves the mouse pointer while holding down the left mouse button. When used to move an object on the screen, the object will be dragged to the current mouse location. When used to highlight text, it will highlight up to the current mouse location.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "x": {
+          "type": "integer",
+          "description": "The x coordinate of the mouse down location."
+        },
+        "y": {
+          "type": "integer",
+          "description": "The y coordinate of the mouse down location."
+        }
+      },
+      "required": ["x", "y"]
+    }
+  },
+
+  {
+    "name": "drag_mouse_release",
+    "description": "This action marks the end of the drag action sequence. It releases the left mouse button, indicating that the drag move is finished.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  }
+
+]

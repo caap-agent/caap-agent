@@ -1,0 +1,6 @@
+path: ../../datasets/webshop_dataset
+train: images/train2024
+val: images/valid2024
+
+nc: 4
+names: ['button', 'text', 'input_field', 'image']
